@@ -10,8 +10,8 @@ const getFilesSourceCodeStep = async (req, res) => {
   try {
     const websiteId = req.query.websiteId;
     const file = {
-      filename: req.body.filename,
-      type: req.body.type,
+      filename: req.query.filename,
+      type: req.query.type,
     };
     storage = getStorage(storage);
     const content = await getFileSourceCode(storage, websiteId, file);

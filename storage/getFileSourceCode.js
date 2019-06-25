@@ -9,7 +9,7 @@ const getFileSourceCode = async (storage, websiteId, file) => {
     .file(`${websiteId}/${file.type}s/${file.filename}`)
     .download()
     .then(function(data) {
-      const contents = data[0];
+      const contents = data[0].toString('utf8');
       resolve(contents);
     })
     .catch(error => {
