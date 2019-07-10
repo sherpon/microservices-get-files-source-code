@@ -1,5 +1,5 @@
 {
-  "name": "getfilessourcecode",
+  "name": "microservices-get-files-source-code",
   "version": "1.0.0",
   "description": "## 1. Deploy",
   "main": "index.js",
